@@ -6,6 +6,8 @@
     --text-sm:  1.2rem;
     --text-x:   0.870rem;
     --color-white: #ffffff;
+    --font-f1: 'DM Sans',sans-serif;
+
 }
 
 *
@@ -15,7 +17,251 @@
     box-sizing: border-box;
 }
 
+body
+{
+    background-color: #2e3348;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
 html
 {
     font-size: 62.5%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
+
+
+
+
+header
+{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+header .header-container
+{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container .logo-img
+{
+    background-image: url('../assets/icons/sushi-logo.png');
+    position: relative;
+    left: -0.125rem;
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-container .logo-name
+{
+    color: var(--color-white);
+    font-size: 2rem;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.2rem;
+}
+
+.header-container .menu-icon
+{
+    background-image: url('../assets/icons/menu_white_24dp.svg');
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 17px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    right: 0.2rem;
+}
+
+
+
+main 
+{
+    width: 100%;
+    height: auto;
+}
+
+main .subtitle
+{
+    color: #ffffff;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+}
+
+main .sushi-defi-chef
+{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+}
+
+.defi-chef-container
+{
+    margin-top: 28px;
+    text-align: center;
+}
+
+.defi-chef-container .sushi-neon
+{
+    width: 128px;
+    height: 120px;
+}
+
+.defi-chef-container .title
+{
+    margin-top: 14px;
+    color: var(--color-white);
+    font-size: 3.8rem;
+    font-weight: 500;
+    line-height: 4.4rem;
+}
+
+.defi-chef-container .paragraph
+{
+    color: var(--color-white);
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    margin-top: 25px;
+}
+
+.defi-chef-container .button-le-app
+{
+    display: grid;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+
+.button-le-app .app-button
+{
+    width: 310px;
+    height: 48px;
+    border: solid 1px #371954;
+    padding: 14px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.header-button-one
+{
+    background-color: transparent;
+    box-shadow: 0px 9px 25px 7px rgba(0,0,0,0.38),
+    inset 0px 8px 30px -12px rgba(0,0,0,0.38);
+}
+
+.header-button-two
+{
+    background-color: #2e3348;
+}
+
+
+.sushi-numbers-value
+{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.sushi-numbers-value .number-box
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 50px;
+}
+
+.number-box .sushi-number
+{
+    height: 124px;
+    background-color: #202231;
+    width: 150px;
+    text-align: center;
+    justify-self: center;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 10px 10px;
+}
+
+.sushi-number .title-number
+{
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 3.265rem;
+}
+.sushi-number .value
+{
+    margin-top: 5px;
+    color: rgb(127,127,127);
+    font-size: 1.4rem;
+}
+
+
+
+
+
+.sushi-master-chef
+{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 75px;
+    text-align: center;
+}
+
+
+.sushi-master-chef .master-cart
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.master-cart .cart
+{
+    width: 281px;
+    height: 255px;
+    background-color: #202231;
+    margin-top: 20px;
+}
+
+.cart .cart-title
+{
+    color: #ffffff;
+}
+
+.cart .cart-paragraph
+{
+    color: rgb(127,127,127);
+}
+
+.cart .cart-button
+{
+    display: inline-block;
+    text-align: center;
+    padding: 8px;
+    color: #ffffff;
+    width: 167px;
+    height: 24px;
+    background-image: linear-gradient(to right, rgb(1, 110, 218), rgb(217, 0, 192));;
 }
