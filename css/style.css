@@ -19,10 +19,12 @@
 
 body
 {
-    background-color: #2e3348;
-    background-position: center;
+    background-image: url("https://raw.githubusercontent.com/sushiswap/sushi-content/master/images/neon-street.jpg"); 
+    background-position: center -5rem; 
+    background-size: cover; 
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
+    background-color: #371954;
 }
 
 html
@@ -44,7 +46,6 @@ header
 {
     width: 100%;
     height: auto;
-    background-color: transparent;
 }
 
 header .header-container
@@ -58,7 +59,7 @@ header .header-container
     justify-content: space-between;
 }
 
-.header-container .logo-img
+.logo-img
 {
     background-image: url('../assets/icons/sushi-logo.png');
     position: relative;
@@ -101,7 +102,7 @@ main
 main .subtitle
 {
     color: #ffffff;
-    font-size: 2.2rem;
+    font-size: 2.250rem;
     line-height: 2.8rem;
 }
 
@@ -231,37 +232,271 @@ main .sushi-defi-chef
 }
 
 
-.sushi-master-chef .master-cart
+.master-cart
 {
-    width: 90%;
+    width: 100%;
+    height: auto;
+    max-width: auto;
     margin: 0 auto;
+    display: flex;
+    overflow: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
 
 .master-cart .cart
 {
-    width: 281px;
-    height: 255px;
+
+    width: 370px;
+    min-width: 280px;
+    height: 265px;
     background-color: #202231;
-    margin-top: 20px;
+    margin-top: 128px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.cart .cart-icon-container
+{
+    position: absolute;
+    background-image: linear-gradient(224.43deg, rgb(13, 4, 21) -16.69%, rgb(27, 33, 82) 86.36%);
+    border-radius: 50%;
+    text-align: center;
+    height: 123px;
+    width: 123px;
+    padding-top: 26px;
+    top: -25%;
+    left: 28%;
+}
+
+.cart img
+{
+    width: 50%;
+}
+
+.cart-icon__p3 img
+{
+    margin-top: 16px;
 }
 
 .cart .cart-title
 {
     color: #ffffff;
+    padding-top: 73px;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 .cart .cart-paragraph
 {
     color: rgb(127,127,127);
+    padding-top: 14px;
+    font-size: 1.425rem;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .cart .cart-button
 {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 44px;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 14px;
+    background-image: linear-gradient(to right, rgb(1, 110, 218), rgb(217, 0, 192));
+    color: var(--color-white);
+    padding: 14px;
+    font-size: 1.625rem;
+}
+
+
+
+
+
+
+
+.sushi-community-evolving
+{
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
-    padding: 8px;
+    margin-top: 10px;
+    padding: 0 8px;
+}
+
+.sushi-community-evolving .community-evolving
+{
+    width: 100%;
+    height: auto;
+    max-width: auto;
+    margin: 0 auto;
+    display: flex;
+    overflow: scroll;
+}
+
+.community-evolving .cart
+{
+    width: 370px;
+    min-width: 280px;
+    height: 265px;
+    background-color: #202231;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 72px;
+    margin-bottom: 80px;
+    margin-left: 25px;
+}
+
+
+.community-evolving .cart img
+{
+    width: 111px;
+    height: 111px;
+    margin-top: 36px;
+}
+
+.community-evolving .cart .community-cart-numbers
+{
+    font-size: 3.62rem;
+    color: var(--color-white);
+}
+
+.community-evolving .cart .community-cart-paragraph
+{
+    color: rgb(127,127,127);
+    font-size: 1.625rem;
+    margin-top: 8px;
+}
+
+.sushi-partners-help
+{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.sushi-partners-help .partner-cart
+{
+    margin-top: 34px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+}
+
+.partner-cart .cart
+{
+    padding-bottom: 20px;
+}
+
+.partner-cart .cart .paragraph
+{
+    color: rgb(127,127,127);
+    font-size: 1.4rem;
+    padding-top: 8px;
+}
+
+.partner-cart img
+{
+    width: 111px;
+}
+
+
+
+
+
+footer
+{
+    background-color: #161522;
+    width: 100%;
+    height: auto;
+}
+
+footer .footer-container
+{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 75px;
+}
+
+.footer-container .sushi-building-platform
+{
+    padding-top: 64px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sushi-building-platform .footer-heading
+{
+    display: flex;
+    align-items: center;
+    padding-bottom: 14px;
+}
+
+.footer-heading .footer-title
+{
+    font-size: 2rem;
+    padding-left: 5px;
+    color: var(--color-white);
+}
+
+.sushi-building-platform .footer-paragraph
+{
+    padding-left: 8px;
+    color: rgb(156,163,175);
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.sushi-building-platform .social-media-sect
+{
+    padding-top: 20px;
+    padding-left: 8px;
+    display: flex;
+    gap: 16px;
+    padding-bottom: 32px;
+}
+
+ion-icon
+{
+    font-size: 2.8rem;
+}
+
+.footer-container .cols-sections
+{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 38px;
+    gap: 16px;
+}
+
+.footer-container .cols-sections li
+{
+    list-style: none;
+    padding-top: 24px;
+}
+
+.footer-container .cols-sections .footer-subtitle
+{
     color: #ffffff;
-    width: 167px;
-    height: 24px;
-    background-image: linear-gradient(to right, rgb(1, 110, 218), rgb(217, 0, 192));;
+    text-transform: uppercase;
+    font-size: 1.425rem;
+    font-weight: bold;
+}
+
+.footer-container .cols-sections li a
+{
+    color: rgb(156,163,175);
+    font-size: 1.475rem;
+}
+
+.footer-container .cols-sect-protocol .footer-subtitle
+{
+    padding-top: 42px;
 }
